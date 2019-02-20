@@ -1,3 +1,3 @@
 class Person < ApplicationRecord
-    has_and_belongs_to_many :organizations, counter_cache: true
+    belongs_to :organizations, counter_cache: true, optional: true
 end
